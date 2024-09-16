@@ -1,0 +1,14 @@
+.button {
+  appearance: none;
+  color: var(--primary-color);
+  background-color: var(--light-back-color);
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 14px 23px;
+}
+
+.button--primary {
+  color: var(--primary-text-color);
+  background-color: var(--primary-back-color);
+}
