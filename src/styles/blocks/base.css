@@ -1,9 +1,10 @@
 .base {
   font-family: 'Fira Sans', Arial, Helvetica, 'Ubuntu Sans', sans;
   font-weight: normal;
+  font-size: 16px;
 }
 
 .base__body {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 20px;
 }
