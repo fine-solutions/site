@@ -1,0 +1,50 @@
+.funding-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0px;
+}
+
+@media (min-width: 622px) {
+  .funding-options {
+    align-items: center;
+  }
+}
+
+.funding-options__title {
+  margin: 0px;
+}
+
+.funding-options__info {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  max-width: 622px;
+}
+
+.funding-options__info * {
+  margin: 0px;
+}
+
+/* .funding-options__description {} */
+/* .funding-options__list {} */
+/* .funding-options__item {} */
+
+.funding-options__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+@media (min-width: 622px) {
+  .funding-options__actions {
+    gap: 100px;
+  }
+}
+
+@media (min-width: 622px) {
+  .funding-options__sign-up,
+  .funding-options__sign-in {
+    width: 150px;
+  }
+}
