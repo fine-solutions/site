@@ -1,0 +1,12 @@
+{% macro projectCard(title, summary, progressValue, progressMax, coverSrc, coverAlt) %}
+<article class="project-card">
+  <section class="project-card__graph">
+    <img class="project-card__cover" src="{{ coverSrc }}" alt="{{ coverAlt }}">
+    <progress class="project-card__progress" value="{{ progressValue }}" max="{{ progressMax }}"></progress>
+  </section>
+  <section class="project-card__text">
+    <h3 class="project-card__title">{{ title }}</h3>
+    <p class="project-card__description">{{ summary }}</p>
+  </section>
+</article>
+{% endmacro %}
