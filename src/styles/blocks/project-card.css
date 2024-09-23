@@ -1,0 +1,95 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 144px;
+  border: 2px solid hsl(var(--primary-color));
+  border-radius: 12px;
+}
+
+@media (min-width: 668px) {
+  .project-card {
+    max-width: 210px;
+  }
+}
+
+.project-card__graph {
+  display: flex;
+  flex-direction: column;
+  height: 94px;
+}
+
+@media (min-width: 668px) {
+  .project-card__graph {
+    height: calc((100vw - 20px * 2 ) * 0.65 / 4);
+  }
+}
+
+@media (min-width: 900px) {
+  .project-card__graph {
+    height: calc(210px * 0.65);
+  }
+}
+
+.project-card__cover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: hsla(var(--primary-color) / var(--tinted-opacity));
+  border-radius: 10px 10px 0px 0px;
+}
+
+.project-card__progress {
+  display: block;
+  appearance: none;
+  border: none;
+  height: 4px;
+  width: 100%;
+  background-color: hsla(var(--primary-color) / var(--tinted-opacity));
+}
+
+.project-card__progress::-moz-progress-bar {
+  background-color: hsl(var(--primary-color));
+}
+
+.project-card__progress::-webkit-progress-bar {
+  background-color: hsla(var(--primary-color) / var(--tinted-opacity));
+}
+
+.project-card__progress::-webkit-progress-value {
+  background-color: hsl(var(--primary-color));
+}
+
+.project-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 94px;
+  padding: 5px;
+}
+
+@media (min-width: 668px) {
+  .project-card__text {
+    height: calc((100vw - 20px * 2 ) * 0.65 / 4);
+  }
+}
+
+@media (min-width: 900px) {
+  .project-card__text {
+    height: calc(210px * 0.65);
+  }
+}
+
+.project-card__title {
+  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.project-card__description {
+  margin: 0px;
+  height: 3.6em;
+  overflow: hidden;
+}
