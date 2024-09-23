@@ -1,6 +1,7 @@
 /* Basic */
 @import url(./fonts.css);
 @import url(./colors.css);
+@import url(./font-theme.css);
 @import url(./blocks/base.css);
 @import url(./blocks/button.css);
 
