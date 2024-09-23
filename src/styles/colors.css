@@ -8,8 +8,8 @@
   --dark-back-color: 0 0 0;
   --light-text-color: 240 3 12;
   --light-back-color: 240 33 99;
-  --primary-text-color: hsl(var(--dark-text-color));
-  --primary-back-color: hsl(var(--primary-color));
+  --primary-text-color: var(--dark-text-color);
+  --primary-back-color: var(--primary-color);
 
   --grey-1-color: 0 0 95;
   --grey-2-color: 0 0 88;
