@@ -2,6 +2,9 @@ const path = require('path')
 const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (config) {
+  config.addCollection('projects', (collectionApi) => {
+    return collectionApi.getFilteredByGlob('src/projects/**/index.md')
+  })
 
   config.setServerOptions({
 
@@ -30,6 +33,7 @@ module.exports = function (config) {
 
   config.addPassthroughCopy('src/robots.txt')
   config.addPassthroughCopy('src/fonts')
+  config.addPassthroughCopy('src/projects/**/**/*.(jpg|png|svg)')
 
   return {
     dir: {
