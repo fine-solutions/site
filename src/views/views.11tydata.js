@@ -15,5 +15,17 @@ module.exports = {
           }
         })
     },
+
+    allPersons: function (data) {
+      const { collections } = data
+      const { people } = collections
+      return people
+      .map((p) => {
+          return {
+            name: p.data.name,
+            src: p.data.avatar ? `${p.filePathStem.replace(/index$/, 'images')}/${p.data.avatar}` : null,
+          }
+        })
+    },
   }
 }
