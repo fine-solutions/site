@@ -1,4 +1,7 @@
 .project-card {
+  --page-padding: 20px;
+  --card-ratio: 0.666666667;
+  --fix-width: 210px;
   display: flex;
   flex-direction: column;
   max-width: 144px;
@@ -6,9 +9,9 @@
   border-radius: 12px;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 676px) {
   .project-card {
-    max-width: 210px;
+    max-width: unset;
   }
 }
 
@@ -18,15 +21,15 @@
   height: 94px;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 676px) {
   .project-card__graph {
-    height: calc((100vw - 20px * 2 ) * 0.65 / 4);
+    height: calc((100vw - var(--page-padding) * 5) * var(--card-ratio) / 4);
   }
 }
 
 @media (min-width: 900px) {
   .project-card__graph {
-    height: calc(210px * 0.65);
+    height: calc(var(--fix-width) * var(--card-ratio));
   }
 }
 
@@ -69,15 +72,15 @@
   padding: 5px;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 676px) {
   .project-card__text {
-    height: calc((100vw - 20px * 2 ) * 0.65 / 4);
+    height: calc((100vw - var(--page-padding) * 5) * var(--card-ratio) / 4);
   }
 }
 
 @media (min-width: 900px) {
   .project-card__text {
-    height: calc(210px * 0.65);
+    height: calc(var(--fix-width) * var(--card-ratio));
   }
 }
 
@@ -92,4 +95,16 @@
   margin: 0px;
   height: 3.6em;
   overflow: hidden;
+}
+
+@media (min-width: 793px) {
+  .project-card__description {
+    height: 4.8em;
+  }
+}
+
+@media (min-width: 892px) {
+  .project-card__description {
+    height: 6.0em;
+  }
 }
