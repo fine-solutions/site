@@ -6,6 +6,10 @@ module.exports = function (config) {
     return collectionApi.getFilteredByGlob('src/projects/**/index.md')
   })
 
+  config.addCollection('people', (collectionApi) => {
+    return collectionApi.getFilteredByGlob('src/people/**/index.md')
+  })
+
   config.setServerOptions({
 
   })
@@ -33,7 +37,7 @@ module.exports = function (config) {
 
   config.addPassthroughCopy('src/robots.txt')
   config.addPassthroughCopy('src/fonts')
-  config.addPassthroughCopy('src/projects/**/**/*.(jpg|png|svg)')
+  config.addPassthroughCopy('src/(people|projects)/**/**/*.(jpg|png|svg)')
 
   return {
     dir: {
