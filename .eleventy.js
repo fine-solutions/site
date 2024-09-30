@@ -13,6 +13,9 @@ module.exports = function (config) {
   })
 
   // Short codes
+  config.addShortcode('currentYear', function () {
+    return `${new Date().getFullYear()}`
+  })
 
   // Server options
   config.setServerOptions({
