@@ -2,6 +2,8 @@ const path = require('path')
 const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (config) {
+
+  // Collections
   config.addCollection('projects', (collectionApi) => {
     return collectionApi.getFilteredByGlob('src/projects/**/index.md')
   })
@@ -10,10 +12,14 @@ module.exports = function (config) {
     return collectionApi.getFilteredByGlob('src/people/**/index.md')
   })
 
+  // Short codes
+
+  // Server options
   config.setServerOptions({
 
   })
 
+  // Plugins
   config.addPlugin(EleventyVitePlugin, {
     viteOptions: {
       appType: 'mpa',
@@ -35,6 +41,7 @@ module.exports = function (config) {
     }
   })
 
+  // Settings
   config.addPassthroughCopy('src/robots.txt')
   config.addPassthroughCopy('src/fonts')
   config.addPassthroughCopy('src/(people|projects)/**/**/*.(jpg|png|svg)')
