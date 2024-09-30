@@ -11,3 +11,7 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --page-padding: 20px;
+}

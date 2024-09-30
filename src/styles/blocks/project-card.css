@@ -1,5 +1,4 @@
 .project-card {
-  --page-padding: 20px;
   --card-ratio: 0.666666667;
   --fix-width: 210px;
   display: flex;
