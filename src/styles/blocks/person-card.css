@@ -1,0 +1,30 @@
+.person-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: fit-content;
+}
+
+.person-card__graph {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-card__avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  object-position: 50%;
+  border-radius: 50%;
+}
+
+.person-card__text {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-card__name {
+  margin: 0px;
+}
