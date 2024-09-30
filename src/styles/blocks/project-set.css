@@ -1,31 +1,27 @@
-.card-set {
+.project-set {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
 }
 
-@media (min-width: 676px) {
-  .card-set {
-    align-items: center;
-  }
-}
-
-.card-set__title {
+.project-set__title {
   margin: 0px;
 }
 
-.card-set__wrapper {
+.project-set__wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow-x: scroll;
   overflow-y: hidden;
-  width: 100%;
 }
 
 @media (min-width: 676px) {
-  .card-set__wrapper {
+  .project-set--large {
+    align-items: center;
+  }
+
+  .project-set--large .project-set__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow: hidden;

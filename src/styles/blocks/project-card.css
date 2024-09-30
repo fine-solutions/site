@@ -10,7 +10,8 @@
 
 @media (min-width: 676px) {
   .project-card {
-    max-width: unset;
+    width: calc((100vw - var(--page-padding) * 5) / 4);
+    max-width: 210px;
   }
 }
 

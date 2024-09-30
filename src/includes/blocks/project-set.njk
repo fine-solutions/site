@@ -1,9 +1,9 @@
 {% from 'blocks/project-card.njk' import projectCard %}
 
-{% macro cardSet(title, projects) %}
-<div class="card-set">
-  <h2 class="card-set__title">{{ title }}</h2>
-  <div class="card-set__wrapper">
+{% macro projectSet(title, projects, isLarge=false) %}
+<div class="project-set {{ "project-set--large" if isLarge }}">
+  <h2 class="project-set__title">{{ title }}</h2>
+  <div class="project-set__wrapper">
     {% for p in projects %}
       {{ projectCard(p.title, p.summary, p.progress, p.duration, p.src, p.alt) }}
     {% endfor %}
