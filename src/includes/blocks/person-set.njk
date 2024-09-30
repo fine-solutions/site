@@ -1,0 +1,12 @@
+{% from 'blocks/person-card.njk' import personCard %}
+
+{% macro personSet(title, people, isLarge=false) %}
+<div class="person-set {{ "person-set--large" if isLarge }}">
+  <h2 class="person-set__title">{{ title }}</h2>
+  <div class="person-set__wrapper">
+    {% for p in people %}
+      {{ personCard(p.name, p.src) }}
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

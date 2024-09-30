@@ -1,0 +1,34 @@
+.person-set {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.person-set__title {
+  margin: 0px;
+}
+
+.person-set__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+@media (min-width: 766px) {
+  .person-set--large {
+    align-items: center;
+  }
+
+  .person-set--large .person-set__title {
+    text-align: center;
+  }
+  
+  .person-set--large .person-set__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: hidden;
+    max-width: 726px;
+  }
+}
