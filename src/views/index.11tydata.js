@@ -9,5 +9,9 @@ module.exports = {
     successfulProjects: function (data) {
       return data.allProjects
     },
+
+    successfulAuthors: function (data) {
+      return data.allPersons
+    }
   }
 }
