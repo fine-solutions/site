@@ -1,0 +1,50 @@
+.funding-motivation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0px;
+}
+
+@media (min-width: 622px) {
+  .funding-motivation {
+    align-items: center;
+  }
+}
+
+.funding-motivation__title {
+  margin: 0px;
+}
+
+.funding-motivation__info {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  max-width: 622px;
+}
+
+.funding-motivation__info * {
+  margin: 0px;
+}
+
+/* .funding-motivation__description {} */
+/* .funding-motivation__list {} */
+/* .funding-motivation__item {} */
+
+.funding-motivation__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+@media (min-width: 622px) {
+  .funding-motivation__actions {
+    gap: 100px;
+  }
+}
+
+@media (min-width: 622px) {
+  .funding-motivation__sign-up,
+  .funding-motivation__sign-in {
+    width: 150px;
+  }
+}
