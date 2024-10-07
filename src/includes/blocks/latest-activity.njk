@@ -1,0 +1,24 @@
+{% macro latestActivity(activityRows) %}
+<div class="latest-activity">
+  <table class="latest-activity__table">
+    {% for rowCells in activityRows %}
+      <tr class="latest-activity__row">
+        {% for cell in rowCells %}
+          <td class="latest-activity__cell">
+            <div class="latest-activity__day-value" data-value="{{ cell.value }}"></div>
+            <div class="latest-activity__day-info">
+              <ul class="latest-activity__info-list">
+                {% for indicator in cell.list %}
+                  <li class="latest-activity__info-item">
+                    {{ indicator.name }}: {{ indicator.value }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endmacro %}

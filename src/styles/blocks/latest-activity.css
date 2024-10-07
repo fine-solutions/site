@@ -1,0 +1,57 @@
+.latest-activity {
+  --max-value: 5;
+  --current-value: 0;
+  width: min-content;
+  padding: 22px 17px;
+  border: 2px solid hsl(var(--primary-color));
+  border-radius: 12px;
+}
+
+.latest-activity__table {
+
+}
+
+.latest-activity__row {
+  
+}
+
+.latest-activity__cell {
+
+}
+
+.latest-activity__day-value {
+  --percentage-value: calc(100% * (var(--current-value) + 1) / var(--max-value));
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background-color: hsla(var(--primary-color) / var(--percentage-value));
+}
+
+.latest-activity__day-value[data-value="1"] {
+  --current-value: 1;
+}
+
+.latest-activity__day-value[data-value="2"] {
+  --current-value: 2;
+}
+
+.latest-activity__day-value[data-value="3"] {
+  --current-value: 3;
+}
+
+.latest-activity__day-value[data-value="4"] {
+  --current-value: 4;
+}
+
+.latest-activity__day-info {
+
+}
+
+.latest-activity__info-list {
+  display: none;
+}
+
+.latest-activity__info-item {
+
+}
