@@ -8,8 +8,8 @@ module.exports = {
           return {
             title: p.data.title,
             summary: p.data.summary,
-            progress: p.data.progress,
-            duration: p.data.duration,
+            progress: p.data.indicators[0].value,
+            duration: p.data.indicators[0].max,
             src: `${p.filePathStem.replace(/index$/, 'covers')}/${p.data.covers.card.src}`,
             alt: p.data.covers.card.alt,
           }
