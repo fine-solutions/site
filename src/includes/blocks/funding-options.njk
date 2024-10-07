@@ -1,16 +1,11 @@
+{% macro fundingOptions(optList) %}
 <div class="funding-options">
-  <h2 class="funding-options__title">Funding options</h2>
-  <div class="funding-options__info">
-    <p class="funding-options__description">Be a patron for projects from engineers of our site. The most of them is students which want to deliver a first own product for customers or community from nothing to MVP. If you want to support young people to become the best professionals this project is right for you. We have different options for our supporters:</p>
-    <ul class="funding-options__list">
-      <li class="funding-options__item"><strong>one-time payment</strong> for any summ;</li>
-      <li class="funding-options__item"><strong>once-a-month payment</strong> via your summ;</li>
-      <li class="funding-options__item"><strong>webinars, seminars, or other activity</strong> to give our authors more information in professional field;</li>
-      <li class="funding-options__item">any type of <strong>advertisement</strong> by your source.</li>
-    </ul>
-  </div>
-  <div class="funding-options__actions">
-    <button class="funding-options__sign-up button button--primary">Sign Up</button>
-    <button class="funding-options__sign-in button">Sign In</button>
-  </div>
+  {% for opt in optList %}
+    <article class="funding-options__article">
+      <button class="funding-options__button">
+        {{ opt.name }}
+      </button>
+    </article>
+  {% endfor %}
 </div>
+{% endmacro %}
