@@ -1,0 +1,14 @@
+.rating-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+}
+
+/* .rating-button__star {
+} */
+
+.rating-button__value {
+  font-weight: 500;
+}
