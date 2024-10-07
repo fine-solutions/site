@@ -1,0 +1,13 @@
+{% macro indicatorSet(indicatorsInfo) %}
+<div class="indicator-set">
+  {% for indicator in indicatorsInfo %}
+    <article class="indicator-set__item">
+      <div class="indicator-set__plot" data-value="{{ indicator.progress }}"></div>
+      <div class="indicator-set__legend">
+        <h3 class="indicator-set__name">{{ indicator.name }}</h3>
+        <p class="indicator-set__value">{{ indicator.value }} / {{ indicator.max }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+{% endmacro %}

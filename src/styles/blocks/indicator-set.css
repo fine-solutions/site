@@ -1,0 +1,74 @@
+.indicator-set {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.indicator-set__plot {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: hsla(var(--primary-color) / 50%);
+}
+
+.indicator-set__plot::after {
+  --begin-angle: 0turn;
+  --current-value: 0%;
+  --space-color: hsla(var(--primary-color) / 50%);
+  --fill-color: hsla(var(--primary-color) / 100%);
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-image: conic-gradient(from var(--begin-angle) at 50% 50%, var(--fill-color) 0% var(--current-value), var(--space-color) var(--current-value));
+}
+
+.indicator-set__plot[data-value="0"]::after { --current-value: 0%; }
+.indicator-set__plot[data-value="1"]::after { --current-value: 5%; }
+.indicator-set__plot[data-value="2"]::after { --current-value: 10%; }
+.indicator-set__plot[data-value="3"]::after { --current-value: 15%; }
+.indicator-set__plot[data-value="4"]::after { --current-value: 20%; }
+.indicator-set__plot[data-value="5"]::after { --current-value: 25%; }
+.indicator-set__plot[data-value="6"]::after { --current-value: 30%; }
+.indicator-set__plot[data-value="7"]::after { --current-value: 35%; }
+.indicator-set__plot[data-value="8"]::after { --current-value: 40%; }
+.indicator-set__plot[data-value="9"]::after { --current-value: 45%; }
+.indicator-set__plot[data-value="10"]::after { --current-value: 50%; }
+.indicator-set__plot[data-value="11"]::after { --current-value: 55%; }
+.indicator-set__plot[data-value="12"]::after { --current-value: 60%; }
+.indicator-set__plot[data-value="13"]::after { --current-value: 65%; }
+.indicator-set__plot[data-value="14"]::after { --current-value: 70%; }
+.indicator-set__plot[data-value="15"]::after { --current-value: 75%; }
+.indicator-set__plot[data-value="16"]::after { --current-value: 80%; }
+.indicator-set__plot[data-value="17"]::after { --current-value: 85%; }
+.indicator-set__plot[data-value="18"]::after { --current-value: 90%; }
+.indicator-set__plot[data-value="19"]::after { --current-value: 95%; }
+.indicator-set__plot[data-value="20"]::after { --current-value: 100%; }
+
+.indicator-set__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.indicator-set__legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicator-set__name {
+  margin: 0px;
+}
+
+.indicator-set__value {
+  margin: 0px;
+}
