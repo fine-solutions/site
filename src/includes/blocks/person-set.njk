@@ -5,7 +5,9 @@
   <h2 class="person-set__title">{{ title }}</h2>
   <div class="person-set__wrapper">
     {% for p in people %}
-      {{ personCard(p.name, p.src) }}
+      <a class="person-set__link" href="{{ p.link }}">
+        {{ personCard(p.name, p.src) }}
+      </a>
     {% endfor %}
   </div>
 </div>

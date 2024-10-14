@@ -33,6 +33,7 @@ module.exports = {
           return {
             name: p.data.name,
             src: p.data.avatar ? `${p.filePathStem.replace(/index$/, 'images')}/${p.data.avatar}` : null,
+            link: `${p.filePathStem}.html`,
           }
         })
     },

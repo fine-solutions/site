@@ -16,6 +16,10 @@
   overflow-y: hidden;
 }
 
+.person-set__link {
+  text-decoration: none;
+}
+
 @media (min-width: 766px) {
   .person-set--large {
     align-items: center;
