@@ -1,6 +1,8 @@
 const constants = require('../../config/constants.js')
 
 module.exports = {
+  isNotMainPage: true,
+
   eleventyComputed: {
     constants: function () {
       return constants

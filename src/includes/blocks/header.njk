@@ -1,0 +1,17 @@
+<header class="header">
+  <button class="header__menu">
+    <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4C0.447715 4 0 4.44772 0 5C0 5.55228 0.447716 6 1 6H23C23.5523 6 24 5.55228 24 5C24 4.44772 23.5523 4 23 4H1ZM0 12C0 11.4477 0.447715 11 1 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H1C0.447716 13 0 12.5523 0 12ZM0 19C0 18.4477 0.447715 18 1 18H23C23.5523 18 24 18.4477 24 19C24 19.5523 23.5523 20 23 20H1C0.447716 20 0 19.5523 0 19Z" fill="#6B5B95"/>
+    </svg>
+  </button>
+  <div class="header__title">
+    {% if isNotMainPage %}
+      <a class="header__link strong" href="/">{{ constants.baseMoto }}</a>
+    {% endif %}
+  </div>
+  <button class="header__profile">
+    <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M22 21H2C3.56109 17.1183 7.44985 14.3684 12 14.3684C16.5502 14.3684 20.4389 17.1183 22 21ZM16.878 7.73684C16.878 10.3529 14.694 12.4737 12 12.4737C9.30595 12.4737 7.122 10.3529 7.122 7.73684C7.122 5.12076 9.30595 3 12 3C14.694 3 16.878 5.12076 16.878 7.73684Z" fill="#6B5B95"/>
+    </svg>
+  </button>
+</header>

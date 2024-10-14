@@ -1,6 +1,7 @@
 module.exports = {
   layout: 'base.njk',
   permalink: '/index.html',
+  isNotMainPage: false,
   eleventyComputed: {
     newProjects: function (data) {
       return data.allProjects
