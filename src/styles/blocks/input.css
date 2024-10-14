@@ -1,0 +1,22 @@
+.input {
+  font-family: 'Fira Sans Medium', Arial, Helvetica, 'Ubuntu Sans', sans;
+  appearance: none;
+  color: hsl(var(--primary-color));
+  background-color: hsl(var(--light-back-color));
+  font-weight: var(--header-weight);
+  font-size: var(--paragraph-size);
+  border: 2px solid hsl(var(--primary-color));
+  border-radius: 12px;
+  padding: 14px 23px;
+  line-height: 1;
+  outline: none;
+}
+
+.input:focus {
+  outline-color: hsl(var(--primary-color));
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 4px;
+}
+
+/* .input--email {} */
