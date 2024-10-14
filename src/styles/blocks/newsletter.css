@@ -4,16 +4,25 @@
   gap: 30px;
 }
 
+@media (min-width: 880px) {
+  .newsletter {
+    width: 880px;
+  }
+}
+
 .newsletter__title {
   margin: 0px;
 }
 
 .newsletter__form {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto min-content;
   gap: 12px;
   padding: 6px 0px;
 }
 
-/* .newsletter__email {}
+.newsletter__email {
+  width: 100%;
+}
 
-.newsletter__submit {} */
+/* .newsletter__submit {} */
