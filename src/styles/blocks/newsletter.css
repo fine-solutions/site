@@ -1,0 +1,19 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.newsletter__title {
+  margin: 0px;
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0px;
+}
+
+/* .newsletter__email {}
+
+.newsletter__submit {} */
