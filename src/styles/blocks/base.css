@@ -1,9 +1,12 @@
 .base {
-  font-family: var(--font-family);
+  font-family: 'Fira Sans Regular', Arial, Helvetica, 'Ubuntu Sans', sans;
   font-size: var(--paragraph-size);
 }
 
 .base__body {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   margin: 0px;
   padding: 0px 20px;
 }
