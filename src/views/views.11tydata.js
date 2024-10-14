@@ -1,5 +1,11 @@
+const constants = require('../../config/constants.js')
+
 module.exports = {
   eleventyComputed: {
+    constants: function () {
+      return constants
+    },
+
     allProjects: function (data) {
       const { collections } = data
       const { projects } = collections
