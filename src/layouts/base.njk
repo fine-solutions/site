@@ -4,6 +4,8 @@
   {% include 'meta.njk' %}
 </head>
 <body class="base__body">
+  {% include 'blocks/header.njk' %}
   {{ content | safe }}
+  {% include 'blocks/footer.njk' %}
 </body>
 </html>
