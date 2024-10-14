@@ -18,6 +18,15 @@
 
 .person-set__link {
   text-decoration: none;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.person-set__link:focus {
+  outline-color: hsl(var(--primary-color));
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
 }
 
 @media (min-width: 766px) {
