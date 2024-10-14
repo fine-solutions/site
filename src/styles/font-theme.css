@@ -1,6 +1,4 @@
 :root {
-  --font-family: 'Fira Sans', Arial, Helvetica, 'Ubuntu Sans', sans;
-
   --header-1-size: 2em;
   --header-2-size: 1.5em;
   --header-3-size: 1.16875em;
@@ -25,16 +23,19 @@ h3 {
   font-size: var(--header-3-size);
 }
 
-h1, h2, h3, strong {
+h1, h2, h3, strong, .strong {
+  font-family: 'Fira Sans Medium', Arial, Helvetica, 'Ubuntu Sans', sans;
   font-style: var(--regular-font-style);
   font-weight: var(--header-weight);
 }
 
-p, a, em, ul, ol, li {
+p, a, ul, ol, li {
   font-style: var(--regular-font-style);
   font-weight: 400;
 }
 
 em {
+  font-family: 'Fira Sans Italic', Arial, Helvetica, 'Ubuntu Sans', sans;
   font-style: var(--featured-font-style);
+  font-weight: 400;
 }
