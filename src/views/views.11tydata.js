@@ -10,8 +10,8 @@ module.exports = {
             summary: p.data.summary,
             progress: p.data.indicators[0].value,
             duration: p.data.indicators[0].max,
-            src: `${p.filePathStem.replace(/index$/, 'covers')}/${p.data.covers.card.src}`,
-            alt: p.data.covers.card.alt,
+            src: p.data.covers ? `${p.filePathStem.replace(/index$/, 'covers')}/${p.data.covers.card.src}` : null,
+            alt: p.data.covers?.card.alt,
           }
         })
     },
