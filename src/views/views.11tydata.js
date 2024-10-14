@@ -20,6 +20,7 @@ module.exports = {
             duration: p.data.indicators[0].max,
             src: p.data.covers ? `${p.filePathStem.replace(/index$/, 'covers')}/${p.data.covers.card.src}` : null,
             alt: p.data.covers?.card.alt,
+            link: `${p.filePathStem}.html`,
           }
         })
     },

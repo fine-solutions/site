@@ -5,7 +5,9 @@
   <h2 class="project-set__title">{{ title }}</h2>
   <div class="project-set__wrapper">
     {% for p in projects %}
-      {{ projectCard(p.title, p.summary, p.progress, p.duration, p.src, p.alt) }}
+      <a class="project-set__link" href="{{ p.link }}">
+        {{ projectCard(p.title, p.summary, p.progress, p.duration, p.src, p.alt) }}
+      </a>
     {% endfor %}
   </div>
 </div>

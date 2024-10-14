@@ -16,6 +16,10 @@
   overflow-y: hidden;
 }
 
+.project-set__link {
+  text-decoration: none;
+}
+
 @media (min-width: 676px) {
   .project-set--large {
     align-items: center;
